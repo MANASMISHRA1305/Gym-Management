@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Colors */
+  :root {
+    --accent-color: #ff6a2a;
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-color: #e0e0e0;
+    --button-bg: #ff6a2a;
+    --button-hover-bg: #ff8c42;
+    --button-text: #fff;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .nav-buttons .btn {
+    margin-left: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--button-text);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-btn, .contact-btn {
+    background-color: var(--button-bg);
+  }
+  
+  .nav-buttons .btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Membership Plans Section */
+  .plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  
+  .plan-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .plan-card:hover {
+    transform: translateY(-10px);
+    background-color: #ff6a2a;
+  }
+  .plan-card h2 {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin: 10px 0;
+    text-decoration: underline;
+  }
+  
+  .plan-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #fffefe;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  .btn a{
+    color: var(--button-text);;
+    text-decoration: none;
+  }
+  
+  .join-btn:hover, .details-btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .plans {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .header h1 {
+      font-size: 2rem;
+    }
+  }
+  

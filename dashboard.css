@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Colors */
+  :root {
+    --accent-color: #ff6a2a;
+    --bg-color: #1a1a2e;
+    --form-bg: #16213e;
+    --text-color: #e0e0e0;
+    --button-bg: #ff6a2a;
+    --button-hover-bg: #ff8c42;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--form-bg);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .nav-buttons .btn {
+    margin-left: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+    background-color: var(--button-bg);
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-buttons .btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Dashboard Section */
+  .dashboard-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .dashboard-section h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .info-card {
+    background-color: var(--form-bg);
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .info-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-10px);
+    background-color: #ff8c42;
+  }
+  
+  .image-section {
+    margin-top: 40px;
+  }
+  
+  .image-section h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .image-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-card {
+      margin-bottom: 20px;
+    }
+  }
+  

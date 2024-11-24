@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Colors */
+  :root {
+    --accent-color: #ff6a2a;
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --text-color: #e0e0e0;
+    --button-bg: #ff6a2a;
+    --button-hover-bg: #ff8c42;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .nav-buttons .btn {
+    margin-left: 15px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-btn, .membership-btn, .contact-btn {
+    background-color: var(--button-bg);
+  }
+  
+  .nav-buttons .btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Header Section */
+  .header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .testimonials p:hover{
+    color: white;
+  }
+  
+  .testimonial-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    color: var(--text-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    background-color: #ff6a2a;
+  }
+  
+  .testimonial-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    line-height: 1.4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonials {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header h1 {
+      font-size: 2rem;
+    }
+  }
+  

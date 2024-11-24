@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Color Scheme */
+  :root {
+    --accent-color: #ff6a2a;      /* Bright orange */
+    --bg-color: #1a1a2e;          /* Deep navy */
+    --text-color: #e0e0e0;        /* Light gray */
+    --highlight-bg: #16213e;      /* Darker blue */
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh; /* Hero section takes 50% of the screen height */
+    background: url('Assets/pexels-tima-miroshnichenko-6388985.jpg') no-repeat center center/cover;
+    background-position: center;
+    margin-bottom: 40px; /* Adds space between hero section and features section */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  .hero-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  .hero-content span{
+    color: #ff6a2a;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: var(--highlight-bg);
+    flex-wrap: wrap;
+    margin-top: 40px; /* Ensures proper space between hero and feature section */
+  }
+  
+  .feature {
+    background-color: var(--bg-color);
+    width: 350px; /* Increased card size */
+    padding: 30px; /* Increased padding for better spacing */
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid #ff6a2a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    background-color: var(--accent-color);
+  }
+  
+  .feature h2 {
+    color: #fff;
+    margin: 15px 0 10px;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+  }
+  
+  .feature-image {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px; /* Increased the height for better visibility */
+    object-fit: cover;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
